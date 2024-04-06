@@ -1,5 +1,6 @@
 import { createSignal } from 'solid-js';
 import Header from './components/Header';
+import StyleText from './components/StyleText';
 import './css/App.css';
 
 function App() {
@@ -8,9 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <p class="read-the-docs">
-        Stylized text that you can use with Solid.
-      </p>
+      <StyleText />
     </>
   )
 }
