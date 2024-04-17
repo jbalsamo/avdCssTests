@@ -18,10 +18,26 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.card {
-  padding: 2em;
+@media screen and (min-width: 601px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: black;
+    padding: 2em;
+    gap: 1rem;
+  }
 }
 
-.read-the-docs {
+@media screen and (max-width: 600px) {
+  .card-container {
+    display: grid;
+    background-color: aqua;
+    padding: 2em;
+    gap: 1rem;
+  }
+}
+
+@media .read-the-docs {
   color: #888;
 }
